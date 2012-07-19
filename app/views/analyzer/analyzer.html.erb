@@ -1,0 +1,13 @@
+<% @page_title = "FitNesse Analyzer"%>
+<% @description = "insert a short description about the fitnesse analyzer"%>
+<%= stylesheet_link_tag "/stylesheets/analyzer.css", :media => "all" %>
+
+<div class="analyzer_content" id="analyzer_content">
+	<p id="header">Run FitNesse Analyzer</p>
+	<div id="exe_analyzer_form">
+		<ul><%= link_to "Execute Analyzer", :controller => "analyzer", :action => "execute_analyzer", :remote => true %></ul>
+	</div>
+	<div id="results">
+
+	</div>
+</div>
